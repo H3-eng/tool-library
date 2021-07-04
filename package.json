@@ -1,0 +1,28 @@
+{
+  "name": "tool-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rollup.config.js",
+  "scripts": {
+    "test": "jest",
+    "start": "rollup -w -c ./build/rollup.config.dev.js",
+    "build": "cross-env NODE_ENV=production rollup -c ./build/rollup.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H3-eng/tool-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/H3-eng/tool-library/issues"
+  },
+  "homepage": "https://github.com/H3-eng/tool-library#readme",
+  "dependencies": {
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
