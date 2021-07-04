@@ -1,6 +1,7 @@
 // 引入nodeJS内置模块path: 路径转换把相对路径转换为绝对路径
 const path = require('path')
 const ts = require('rollup-plugin-typescript2')
+const babel = require('rollup-plugin-babel')
 
 const resolve = p => path.resolve(__dirname, '../', p)
 
@@ -14,6 +15,9 @@ module.exports = {
     name: '$Form'
   },
   plugins: [
-    ts()
+    ts(),
+    babel({
+      exclude: 'node_modules/**' // 排除node_modules文件
+    })
   ]
 };

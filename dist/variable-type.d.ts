@@ -1,0 +1,10 @@
+export declare function variableType(data: any): any;
+export declare function isBoolean(data: any): boolean;
+export declare function isNumber(data: any): boolean;
+export declare function isString(data: any): boolean;
+export declare function isUndefined(data: any): boolean;
+export declare function isNull(data: any): boolean;
+export declare function isArray(data: any): boolean;
+export declare function isObject(data: any): boolean;
+export declare function isFunction(data: any): boolean;
+export declare function isSymbol(data: any): boolean;
