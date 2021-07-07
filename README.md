@@ -19,20 +19,20 @@
 
 
 # rollupc常用配置
-1.input
+## input
 入口文件地址
-2.output
+## output
 `output:{
   file:'bundle.js', // 输出文件
   format: 'cjs,  //  五种输出格式：amd /  es6 / iife / umd / cjs
   name:'A',  //当format为iife和umd时必须提供，将作为全局变量挂在window(浏览器环境)下：window.A=...
   sourcemap:true  //生成bundle.map.js文件，方便调试
 }`
-3.plugins
+## plugins
 各种插件使用的配置
-4.external
+## external
 external:['lodash'] //告诉rollup不要将此lodash打包，而作为外部依赖
-5.global
+## global
 `global:{
   'jquery':'$' //告诉rollup 全局变量$即是jquery
 }`
